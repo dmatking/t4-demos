@@ -136,10 +136,10 @@ static void run_plasma(void)
     int t = 0;
     int64_t start = esp_timer_get_time();
 
-    // Precompute scale factors: pixel coord -> sin LUT index
-    // We want ~1 full sine period per 45 pixels -> 1024/45 ≈ 23
-    const int XSCALE = 23;
-    const int YSCALE = 23;
+    // Scale factors: pixel coord -> sin LUT index
+    // 1024 / SCALE = pixels per full sine period. 4 -> ~256px blobs
+    const int XSCALE = 4;
+    const int YSCALE = 4;
 
     while ((esp_timer_get_time() - start) < (int64_t)DEMO_SECS * 1000000) {
         for (int py = 0; py < H; py++) {
