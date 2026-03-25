@@ -43,4 +43,4 @@ idf.py build flash monitor
 
 ## Display notes
 
-The vendor defines `AMOLED_WIDTH=600` (physical height) and `AMOLED_HEIGHT=450` (physical width). Use `W = amoled_height()` for columns and `H = amoled_width()` for rows. See [CLAUDE.md](CLAUDE.md) for details.
+The vendor defines `AMOLED_WIDTH=600` (physical height) and `AMOLED_HEIGHT=450` (physical width). Use `W = amoled_height()` for columns and `H = amoled_width()` for rows. The column offset (+16) is handled automatically by the driver via `CONFIG_LILYGO_T4_S3_241`.
