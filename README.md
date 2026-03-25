@@ -4,7 +4,7 @@ Animated graphics demos for the LilyGo T4-S3 2.41" AMOLED display.
 
 ## Hardware
 
-- **Board:** LilyGo T4-S3 (ESP32-S3, 16MB flash, 8MB OPI PSRAM)
+- **Board:** [LilyGo T4-S3 2.41" AMOLED](https://www.lilygo.cc/products/t4-s3) (ESP32-S3, 16MB flash, 8MB OPI PSRAM)
 - **Display:** 2.41" AMOLED, 450x600, ~310 DPI, RM690B0 controller
 - **Interface:** QSPI over SPI3 at 36 MHz
 - **Color:** RGB565 (16-bit, byte-swapped on wire)
